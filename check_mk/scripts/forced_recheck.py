@@ -3,6 +3,8 @@
 #Author: Bui Thanh Minh
 #Description: Script force recheck a service in Nagios.
 #Update to OMD by: kienlt
+# This script required pynag
+# Require a file in /etc/nagios/nagios.cfg. You can create a link like nagios.cfg -> /omd/sites/sysadmin/etc/nagios/nagios.d/omd.cfg in /etc/nagios
 import pynag.Model
 import time,sys
 now=int(time.time())
