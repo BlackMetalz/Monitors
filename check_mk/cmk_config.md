@@ -71,5 +71,10 @@ extra_host_conf['max_check_attempts'] = [
   ('3', ALL_HOSTS),
 ]
 ```
+- Simply disable check type after reload. Example ignore NTP TIME
+```
+ignored_checktypes = [ "ntp.time" ]
+```
+
 
 
